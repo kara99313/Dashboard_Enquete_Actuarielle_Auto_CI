@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2025-11-14T22:19:44.480542Z",
+  "rows": 2740,
+  "cols": 17,
+  "preview_file": "df_t5_final_preview.csv",
+  "preview_sha256": "de128d92cd6c7a746f8cc37d09a615044775dc10c3645379817ab38e0fcc1b87",
+  "python": "3.12.3",
+  "pandas": "2.3.3",
+  "platform": "Windows-10-10.0.19045-SP0"
+}

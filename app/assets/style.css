@@ -1,0 +1,31 @@
+
+/* === GLOBAL === */
+.stApp, body { background:#0B1221 !important; color:#EAEFF7; font-family:'Poppins',sans-serif; }
+a { color:#F5B301; text-decoration:none; }
+div.stButton > button:first-child { background:linear-gradient(135deg,#F5B301,#E4A100); color:#0B1221; border:none; border-radius:10px; padding:0.6rem 1rem; font-weight:700; }
+div.stButton > button:first-child:hover { filter:brightness(1.1); transform:translateY(-1px); transition:all .2s ease; }
+
+/* === HEADER === */
+.header { position:sticky; top:0; z-index:10; background:#111A2E; border-radius:12px; padding:0.8rem 1rem; margin-bottom:1rem; box-shadow:0 6px 16px rgba(0,0,0,.35); }
+.header h1 { color:#F5B301; margin:0; letter-spacing:.03em; text-transform:uppercase; }
+.header p { margin:.2rem 0 0; color:#A9B8D1; }
+
+/* === TITRES === */
+h2, h3, h4 { color:#F5B301; letter-spacing:.03em; text-transform:uppercase; }
+
+/* === CARTES === */
+.card { background:#111A2E; border-radius:18px; padding:1.4rem; margin:1rem 0; box-shadow:0 4px 12px rgba(0,0,0,.35); }
+.card:hover { transform:translateY(-2px); transition:transform .2s ease; }
+
+/* === KPI === */
+.kpi { background:linear-gradient(145deg,#0E1830,#162040); border-left:5px solid #F5B301; border-radius:12px; padding:1rem; text-align:center; font-weight:700; }
+.kpi .value { font-size:1.6rem; }
+.kpi .label { color:#BFD1EA; font-size:.9rem; text-transform:uppercase; letter-spacing:.06em; }
+
+/* === TABLES === */
+table { background:#111A2E; color:#EAEFF7; border-collapse:collapse; border-radius:10px; overflow:hidden; }
+th { background:#F5B301; color:#0B1221; text-transform:uppercase; }
+td, th { padding:10px; border-bottom:1px solid #1C2742; }
+
+/* === FOOTER === */
+.footer { text-align:center; font-size:.9rem; color:#A9B8D1; margin-top:2rem; }

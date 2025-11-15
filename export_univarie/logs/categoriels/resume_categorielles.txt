@@ -1,0 +1,33 @@
+=== RAPPORT AUTOMATIQUE – ANALYSE CATÉGORIELLE (5 MÉTIER) ===
+Date : 2025-11-06 14:42:12.513495
+
+Variable : zone
+  • Nombre de modalités : 6
+  • Modalité dominante : C (27.55%)
+  • Modalité la plus rare : F (2.74%)
+  → Distribution modérément concentrée.
+
+Variable : marque
+  • Nombre de modalités : 11
+  • Modalité dominante : 2 (27.3%)
+  • Modalité la plus rare : 100 (0.62%)
+  → Distribution modérément concentrée.
+
+Variable : carburant
+  • Nombre de modalités : 2
+  • Modalité dominante : D (51.75%)
+  • Modalité la plus rare : E (48.25%)
+  → ⚠️ Distribution déséquilibrée (classe dominante > 50%).
+
+Variable : region
+  • Nombre de modalités : 15
+  • Modalité dominante : 13 (61.09%)
+  • Modalité la plus rare : 8 (1.86%)
+  → ⚠️ Distribution déséquilibrée (classe dominante > 50%).
+
+Variable : garantie
+  • Nombre de modalités : 5
+  • Modalité dominante : 1Rc (35.55%)
+  • Modalité la plus rare : 3Xx (0.44%)
+  → Distribution modérément concentrée.
+

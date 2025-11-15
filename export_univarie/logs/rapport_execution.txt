@@ -1,0 +1,34 @@
+Rapport d'exécution – Analyse univariée numérique
+Date : 2025-11-03 20:28:49.216338
+Variables analysées : exposition, puissance, agevehicule, ageconducteur, bonus, densite, nbre, cout, frequence, severite, prime_pure
+
+Dossiers créés :
+  - tableaux: c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_univarie\tableaux
+  - graphiques: c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_univarie\graphiques
+  - logs: c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_univarie\logs
+
+Fichiers exportés :
+  export_univarie\graphiques\ageconducteur_distribution_box.png
+  export_univarie\graphiques\agevehicule_distribution_box.png
+  export_univarie\graphiques\bonus_distribution_box.png
+  export_univarie\graphiques\cout_distribution_box.png
+  export_univarie\graphiques\densite_distribution_box.png
+  export_univarie\graphiques\exposition_distribution_box.png
+  export_univarie\graphiques\frequence_distribution_box.png
+  export_univarie\graphiques\nbre_distribution_box.png
+  export_univarie\graphiques\prime_pure_distribution_box.png
+  export_univarie\graphiques\puissance_distribution_box.png
+  export_univarie\graphiques\severite_distribution_box.png
+  export_univarie\logs\rapport_execution.txt
+  export_univarie\tableaux\resume_univarie_numerique.csv
+  export_univarie\tableaux\univarie_ageconducteur_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_agevehicule_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_bonus_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_cout_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_densite_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_exposition_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_frequence_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_nbre_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_prime_pure_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_puissance_effectifs_frequences.csv
+  export_univarie\tableaux\univarie_severite_effectifs_frequences.csv

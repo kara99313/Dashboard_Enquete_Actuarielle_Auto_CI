@@ -1,0 +1,5 @@
+OLS_HC3 — n=2740 observations
+R²=0.012 | RMSE=5787.3085 | MAE=2436.1945 | MAPE=554.01%
+➡️ HC3 corrige les erreurs standards sans modifier les coefficients ni les prédictions.
+✅ Les p-values sont désormais robustes à l’hétéroscédasticité.
+🧩 Prochaine étape : WLS (pondération par exposition) pour tarification/prédiction.

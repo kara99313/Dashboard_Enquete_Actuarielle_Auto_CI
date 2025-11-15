@@ -1,0 +1,14 @@
+=== 3.2.C – Analyse de variance expliquée ===
+Date : 2025-11-06 14:42:31.423859
+
+Classement des variables catégorielles selon la part de variance expliquée :
+
+- garantie     | Effet = 0.0375 | Force = Faible
+- marque       | Effet = 0.0212 | Force = Faible
+- region       | Effet = 0.0118 | Force = Faible
+- zone         | Effet = 0.0011 | Force = Négligeable
+- carburant    | Effet = -0.0003 | Force = Négligeable
+
+Interprétation :
+  η² ou ε² mesure la proportion de variance de la prime pure expliquée par la variable catégorielle.
+  Plus η² est élevé, plus la variable est discriminante (utile pour la modélisation du risque).

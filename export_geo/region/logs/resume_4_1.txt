@@ -1,0 +1,8 @@
+=== 4.1 – Prime pure par région (± IC95%) ===
+Date : 2025-11-06 14:42:41.348560
+
+Tableau complet : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\region\tableaux\prime_pure_par_region_resume.csv
+Barplot : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\region\graphiques\barplot_prime_pure_par_region_ic95.png
+Boxplot : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\region\graphiques\boxplot_prime_pure_par_region.png
+Top5 : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\region\tableaux\top5_regions_prime_pure.csv
+Bottom5 : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\region\tableaux\bottom5_regions_prime_pure.csv

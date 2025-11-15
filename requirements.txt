@@ -1,0 +1,101 @@
+# ==========================================================
+# AfriAI Solutions – Projet d’évaluation Python
+# Requirements pour Python 3.12 (validés VS Code)
+# ----------------------------------------------------------
+# NOTE :
+# - Exécuter :  pip install --no-cache-dir -r requirements.txt
+# - Compatible : Windows / VS Code / Streamlit / KoboToolbox
+# ==========================================================
+
+
+# -------------------------------
+# CORE / ENVIRONNEMENT
+# -------------------------------
+python-dotenv==1.0.1
+setuptools==80.9.0
+wheel==0.45.1
+
+
+# -------------------------------
+# DATA MANAGEMENT & CLEANING
+# -------------------------------
+pandas==2.3.3
+numpy==1.26.4             # ← pin pour compat Statsmodels/SciPy
+openpyxl==3.1.5
+pyarrow==18.1.0
+pyyaml==6.0.2
+tqdm==4.67.1
+
+
+# -------------------------------
+# VISUALISATION & GRAPHES
+# -------------------------------
+matplotlib==3.10.7
+seaborn==0.13.2
+plotly==6.3.1
+altair==5.4.1
+colorcet==3.1.0
+
+
+# -------------------------------
+# STATISTIQUES & MODELISATION
+# -------------------------------
+scikit-learn==1.7.2
+scipy==1.11.4              # ← pin pour compat Statsmodels (évite _lazywhere)
+statsmodels==0.14.3
+joblib==1.5.2
+pingouin==0.5.5            # Tests robustes, ANOVA, effet de taille, corrélation, etc.
+scikit-posthocs==0.9.0     # Tests post-hoc (Dunn, Conover, Tukey, etc.)
+
+
+# -------------------------------
+# DASHBOARDING (2 frameworks au choix)
+# -------------------------------
+streamlit==1.39.0
+dash==2.18.2
+dash-bootstrap-components==1.6.0
+dash-iconify==0.1.2
+streamlit-option-menu==0.3.13
+streamlit-aggrid==1.1.0
+streamlit-extras==0.7.8
+streamlit-autorefresh       # ← Auto-refresh périodique du dashboard
+
+
+# -------------------------------
+# API & DEPLOIEMENT (OBLIGATOIRE pour connexion Kobo)
+# -------------------------------
+requests==2.32.5           # ← ajout critique pour connexion à KoboToolbox
+gunicorn==23.0.0           # ← utile pour déploiement Render / Streamlit Cloud
+fastapi==0.115.0           # ← optionnel si tu veux exposer l’API (backend)
+uvicorn[standard]==0.31.0  # ← serveur local FastAPI (optionnel)
+
+
+# -------------------------------
+# JUPYTER / VS CODE (kernel)
+# -------------------------------
+ipykernel==7.1.0
+nbformat==5.10.4
+
+
+# -------------------------------
+# IA & RAG (OPTIONNEL – pour extensions futures)
+# -------------------------------
+# langchain==0.3.5
+# langchain-community==0.3.5
+# openai==1.51.0
+# tiktoken==0.8.0
+# faiss-cpu==1.8.0
+
+
+# -------------------------------
+# EXCEL & EXPORTS (OPTIONNEL)
+# -------------------------------
+kaleido==0.2.1             # Export figures Plotly en PNG (pour PDF)
+reportlab==4.2.5           # Génération de rapports PDF
+
+
+# -------------------------------
+# LOGS & VALIDATION (OPTIONNEL)
+# -------------------------------
+# loguru==0.7.3
+# pydantic==2.9.2.

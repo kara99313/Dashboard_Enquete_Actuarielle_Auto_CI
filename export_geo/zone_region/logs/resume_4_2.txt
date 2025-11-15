@@ -1,0 +1,8 @@
+=== 4.2 – Interactions zone × region ===
+Date : 2025-11-06 14:42:44.692024
+
+Moyennes : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\zone_region\tableaux\prime_pure_mean_zone_region.csv
+Effectifs : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\zone_region\tableaux\effectifs_zone_region.csv
+Audit    : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\zone_region\tableaux\audit_zone_region_mean_std_ic95.csv
+Heatmap moyennes : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\zone_region\graphiques\heatmap_zone_region_prime_pure_mean.png
+Heatmap effectifs: c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\zone_region\graphiques\heatmap_zone_region_effectifs.png

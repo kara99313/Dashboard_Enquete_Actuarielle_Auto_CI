@@ -1,0 +1,37 @@
+Rapport d'exécution – Analyse univariée (numériques)
+Date : 2025-11-06 14:42:07.641526
+Variables analysées : exposition, puissance, agevehicule, ageconducteur, bonus, densite, nbre, cout, frequence, severite, prime_pure
+
+Dossiers créés :
+  - tableaux: c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_univarie\tableaux\numeriques
+  - graphiques: c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_univarie\graphiques\numeriques
+  - logs: c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_univarie\logs\numeriques
+
+Fichiers exportés :
+  export_univarie\tableaux\numeriques\resume_univarie_numerique.csv
+  export_univarie\tableaux\numeriques\univarie_ageconducteur_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_agevehicule_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_bonus_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_cout_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_densite_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_exposition_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_frequence_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_marque_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_nbre_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_prime_pure_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_puissance_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_region_effectifs_frequences.csv
+  export_univarie\tableaux\numeriques\univarie_severite_effectifs_frequences.csv
+  export_univarie\graphiques\numeriques\ageconducteur_distribution_box.png
+  export_univarie\graphiques\numeriques\agevehicule_distribution_box.png
+  export_univarie\graphiques\numeriques\bonus_distribution_box.png
+  export_univarie\graphiques\numeriques\cout_distribution_box.png
+  export_univarie\graphiques\numeriques\densite_distribution_box.png
+  export_univarie\graphiques\numeriques\exposition_distribution_box.png
+  export_univarie\graphiques\numeriques\frequence_distribution_box.png
+  export_univarie\graphiques\numeriques\marque_distribution_box.png
+  export_univarie\graphiques\numeriques\nbre_distribution_box.png
+  export_univarie\graphiques\numeriques\prime_pure_distribution_box.png
+  export_univarie\graphiques\numeriques\puissance_distribution_box.png
+  export_univarie\graphiques\numeriques\region_distribution_box.png
+  export_univarie\graphiques\numeriques\severite_distribution_box.png

@@ -1,0 +1,48 @@
+# ==========================================================
+# AfriAI — .gitignore
+# Empêche l’envoi des fichiers sensibles sur GitHub
+# ==========================================================
+
+# Environnement virtuel local
+.venv/
+venv/
+env/
+
+# Fichiers secrets Streamlit (NE JAMAIS envoyer sur GitHub)
+.streamlit/secrets.toml
+
+# Caches Streamlit
+.streamlit/
+
+# Fichiers temporaires Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers logs
+*.log
+
+# Fichiers Jupyter indésirables
+.ipynb_checkpoints/
+
+# Dossiers de build ou dist
+build/
+dist/
+
+# Cache VS Code
+.vscode/
+
+# Données locales (si jamais tu as exporté des CSV)
+*.csv
+*.xlsx
+*.xls
+
+# Mac/Windows système
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.bak
+

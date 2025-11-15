@@ -1,0 +1,21 @@
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                      y   No. Observations:                 2740
+Model:                            GLM   Df Residuals:                  2013.58
+Model Family:                 Tweedie   Df Model:                            5
+Link Function:                    log   Scale:                          165.91
+Method:                          IRLS   Log-Likelihood:                -19457.
+Date:                Thu, 06 Nov 2025   Deviance:                   1.1335e+05
+Time:                        14:44:23   Pearson chi2:                 3.34e+05
+No. Iterations:                    10   Pseudo R-squ. (CS):           0.007452
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------
+const             6.6182      0.355     18.648      0.000       5.923       7.314
+bonus             0.0077      0.003      2.531      0.011       0.002       0.014
+ageconducteur     0.0002      0.004      0.065      0.948      -0.007       0.007
+agevehicule      -0.0327      0.011     -3.091      0.002      -0.054      -0.012
+puissance         0.0272      0.025      1.095      0.274      -0.022       0.076
+densite           0.0031      0.002      1.828      0.068      -0.000       0.006
+=================================================================================

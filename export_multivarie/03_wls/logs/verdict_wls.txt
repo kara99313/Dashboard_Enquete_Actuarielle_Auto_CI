@@ -1,0 +1,5 @@
+WLS (poids=exposition) — comparaison à OLS_HC3 :
+- RMSE ↔/↑ ; MAE ↓
+- Si le nuage Résidus~Ajustés montre un cône réduit → variance mieux traitée.
+- WLS est pertinent quand la variance des erreurs croît avec l’exposition ou la taille du risque.
+Prochaine étape (standard actuariat) : GLM Gamma/Tweedie pour variable positive et asymétrique.
