@@ -12,7 +12,7 @@ import pandas as pd
 import requests
 import streamlit as st
 import plotly.express as px
-from streamlit_autorefresh import st_autorefresh  # ← Auto-refresh
+from streamlit_extras.st_autorefresh import st_autorefresh
 
 # --- Modèles ML / GLM (scikit-learn) ---
 from sklearn.compose import ColumnTransformer
