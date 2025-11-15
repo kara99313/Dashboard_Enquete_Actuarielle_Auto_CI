@@ -1,8 +1,0 @@
-⚠️ MAPE très élevé : fortes asymétries/valeurs extrêmes impactent la précision moyenne.
-✅ Dispersion des erreurs cohérente avec l’échelle des valeurs.
-Calibration déciles — écart moyen |ŷ-ȳ| ≈ 843.2.
-🔧 Recos :
-- Garder GLM Tweedie (log-link, poids=exposition) comme base tarifaire.
-- Envisager des segments (par zone/région/garantie) si la calibration diffère selon les groupes.
-- Tester des transformations (splines sur âge véhicule/ conducteur) et interactions si justifiées.
-- Contrôler la stabilité temporelle si données multi-annuelles.

@@ -1,9 +1,0 @@
-=== 4.3 – Tests statistiques par région ===
-Date : 2025-11-06 14:42:44.926292
-
-Test global : Kruskal–Wallis (non paramétrique)
-Statistique = 46.2581 | p-value = 2.5440e-05
-Homogénéité (Levene_p) = 0.0144
-Normalité globale = False
-
-Post-hoc Dunn : c:\Users\hp\Documents\FORMATION_PYTHON_2025_AfriAI\Projet_Final\export_geo\tests_region\tableaux\posthoc_dunn_regions.csv

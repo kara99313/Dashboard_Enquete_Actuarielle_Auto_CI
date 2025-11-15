@@ -3,46 +3,80 @@
 # Empêche l’envoi des fichiers sensibles sur GitHub
 # ==========================================================
 
-# Environnement virtuel local
+# -------------------------
+# Environnements virtuels
+# -------------------------
 .venv/
 venv/
 env/
 
-# Fichiers secrets Streamlit (NE JAMAIS envoyer sur GitHub)
+# -------------------------
+# Secrets Streamlit
+# NE JAMAIS envoyer sur GitHub
+# -------------------------
 .streamlit/secrets.toml
 
-# Caches Streamlit
+# -------------------------
+# Cache Streamlit
+# -------------------------
 .streamlit/
 
-# Fichiers temporaires Python
+# -------------------------
+# Fichiers Python temporaires
+# -------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
+# -------------------------
 # Fichiers logs
+# -------------------------
 *.log
 
-# Fichiers Jupyter indésirables
+# -------------------------
+# Fichiers Jupyter
+# -------------------------
 .ipynb_checkpoints/
 
-# Dossiers de build ou dist
+# -------------------------
+# Dossiers build / dist
+# -------------------------
 build/
 dist/
 
-# Cache VS Code
+# -------------------------
+# VS Code
+# -------------------------
 .vscode/
 
-# Données locales (si jamais tu as exporté des CSV)
+# -------------------------
+# Données locales
+# (exportées temporairement)
+# -------------------------
 *.csv
 *.xlsx
 *.xls
 
-# Mac/Windows système
+# -------------------------
+# Fichiers système Mac / Windows
+# -------------------------
 .DS_Store
 Thumbs.db
 
-# Temp files
+# -------------------------
+# Fichiers temporaires divers
+# -------------------------
 *.tmp
 *.bak
 
+# ==========================================================
+# Dossiers locaux à garder sur ta machine mais ne plus suivre
+# ==========================================================
+app/
+Docs/
+exports/
+export_univarie/
+export_bivarie/
+export_geo/
+export_multivarie/

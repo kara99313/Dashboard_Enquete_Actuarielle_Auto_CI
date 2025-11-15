@@ -1,5 +1,0 @@
-⚠️ Hétéroscédasticité (BP p=0.0237) → SE OLS non fiables.
-👉 Utiliser OLS_HC3 et/ou WLS (poids=exposition).
-ℹ️ Normalité imparfaite (JB p=0, Shapiro p=0).
-👉 Interpréter surtout les signes; envisager log(Y) ou GLM (Gamma/Tweedie).
-✅ Pas d’autocorrélation suspecte (DW≈1.77).

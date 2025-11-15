@@ -1,9 +1,0 @@
-🔎 Comparatif GLM (Gamma vs Tweedie) :
-- Modèle le plus performant : GLM_Tweedie (RMSE=5860.57, MAE=2011.07, MAPE=330.33%)
-- Le lien log garantit des prédictions toujours positives.
-- La distribution asymétrique est désormais bien modélisée.
-- Si la cible est très étalée, le modèle Tweedie (p≈1.5) est souvent préféré en assurance auto.
-
-📘 Recommandation finale :
-→ Conserver le modèle GLM Tweedie (log-link, poids=exposition) pour la phase de prédiction et tarification.
-→ Vérifier la calibration sur un échantillon test / validation (à venir).
