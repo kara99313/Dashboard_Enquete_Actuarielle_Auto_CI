@@ -39,6 +39,10 @@ __pycache__/
 # -------------------------
 .ipynb_checkpoints/
 
+# 🟦 Notebooks à conserver uniquement en local
+Pretraitements.ipynb
+EDA_Modelisation.ipynb
+
 # -------------------------
 # Dossiers build / dist
 # -------------------------
