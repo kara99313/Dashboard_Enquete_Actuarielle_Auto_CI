@@ -12,7 +12,6 @@ import pandas as pd
 import requests
 import streamlit as st
 import plotly.express as px
-from streamlit_extras.st_autorefresh import st_autorefresh
 
 # --- Modèles ML / GLM (scikit-learn) ---
 from sklearn.compose import ColumnTransformer
@@ -39,9 +38,8 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# 🔁 Auto-refresh toutes les 5 minutes (300 000 ms)
-# En cohérence avec ttl=300s du cache de fetch_kobo_json
-st_autorefresh(interval=300_000, key="kobo_autorefresh")
+# 🔁 Auto-refresh désactivé pour le déploiement Streamlit Cloud
+# (si on veut le remettre plus tard, on réintroduira streamlit_extras.st_autorefresh)
 
 # ====== Style global (HTML/CSS léger) ======
 st.markdown(
@@ -127,7 +125,7 @@ TARGET_COL = "prime_pure"
 # FONCTIONS UTILITAIRES
 # ==========================================================
 
-@st.cache_data(ttl=300)  # 300s = 5 min, cohérent avec l’auto-refresh
+@st.cache_data(ttl=300)  # 300s = 5 min (cohérent avec un éventuel auto-refresh)
 def fetch_kobo_json() -> pd.DataFrame:
     """Récupère les données Kobo brutes (JSON v2)."""
     r = requests.get(API_DATA_URL, headers=HEADERS, timeout=60)
