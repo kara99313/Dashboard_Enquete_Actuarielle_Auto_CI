@@ -180,3 +180,8 @@ Ce script :
 
 Ce README contient **100% des commandes**, scripts, configurations, solutions et procédures pour exécuter le dashboard de manière **infaillible, stable et durable**.
 
+
+
+## 🔗 Accès au Dashboard Déployé
+
+👉 **Lien Streamlit :** https://dashboardenqueteactuarielleautoci-j82qjrkwcnptsrrupmtzxg.streamlit.app/
