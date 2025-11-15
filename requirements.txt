@@ -1,6 +1,6 @@
 # ==========================================================
 # AfriAI Solutions – Projet d’évaluation Python
-# Requirements pour Python 3.12 (validés VS Code)
+# Requirements pour Python 3.12+ / 3.13 (validés VS Code & Streamlit Cloud)
 # ----------------------------------------------------------
 # NOTE :
 # - Exécuter :  pip install --no-cache-dir -r requirements.txt
@@ -20,7 +20,7 @@ wheel==0.45.1
 # DATA MANAGEMENT & CLEANING
 # -------------------------------
 pandas==2.3.3
-numpy==1.26.4             # ← pin pour compat Statsmodels/SciPy
+numpy==1.26.4             # ← ok avec SciPy 1.14.x et Statsmodels
 openpyxl==3.1.5
 pyarrow==18.1.0
 pyyaml==6.0.2
@@ -41,7 +41,7 @@ colorcet==3.1.0
 # STATISTIQUES & MODELISATION
 # -------------------------------
 scikit-learn==1.7.2
-scipy==1.11.4              # ← pin pour compat Statsmodels (évite _lazywhere)
+scipy==1.14.1              # ← version avec wheels pour Python 3.13 (pas de gfortran)
 statsmodels==0.14.3
 joblib==1.5.2
 pingouin==0.5.5            # Tests robustes, ANOVA, effet de taille, corrélation, etc.
@@ -58,7 +58,6 @@ dash-iconify==0.1.2
 streamlit-option-menu==0.3.13
 streamlit-aggrid==1.1.0
 streamlit-extras==0.7.8
-streamlit-autorefresh       # ← Auto-refresh périodique du dashboard
 
 
 # -------------------------------
@@ -98,4 +97,4 @@ reportlab==4.2.5           # Génération de rapports PDF
 # LOGS & VALIDATION (OPTIONNEL)
 # -------------------------------
 # loguru==0.7.3
-# pydantic==2.9.2.
+# pydantic==2.9.2
