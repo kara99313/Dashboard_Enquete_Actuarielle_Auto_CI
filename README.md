@@ -108,10 +108,8 @@ ASSET_UID = "TON_ASSET_UID"
 ## 6. En cas de PROBLÈME (port bloqué, application blanche, crash)
 
 ### 6.1 Réinitialisation complète
-
 ```powershell
-.
-eset_streamlit.ps1
+.\reset_streamlit.ps1
 .\start_dashboard.ps1
 ```
 
@@ -156,7 +154,21 @@ streamlit run dashboard.py --server.port 8890
 
 ---
 
-## 9. Script `reset_streamlit.ps1` (référence)
+| Action | Commande |
+|--------|------------|
+| Lancer | `start_dashboard.ps1` |
+| Réparer | `reset_streamlit.ps1` puis `start_dashboard.ps1` |
+
+---
+
+## 9. Scripts PowerShell inclus  
+- Gestion des ports  
+- Redémarrage propre  
+- Activation venv  
+
+---
+
+## 10. Script `reset_streamlit.ps1` (référence)
 
 Ce script :
 
@@ -166,7 +178,7 @@ Ce script :
 
 ---
 
-## 10. Script `start_dashboard.ps1` (référence)
+## 11. Script `start_dashboard.ps1` (référence)
 
 Ce script :
 
@@ -176,12 +188,55 @@ Ce script :
 
 ---
 
-## 11. Conclusion
+## 12. Section Générale — Documentation pour Tout Projet
+
+### Structure professionnelle recommandée :
+```
+mon_projet/
+│── src/
+│── docs/
+│── data/
+│── notebooks/
+│── tests/
+│── scripts/
+│── requirements.txt
+│── README.md
+│── .gitignore
+└── .env
+```
+
+### Règle : Séparer *local* vs *déployé*
+- Données lourdes → local uniquement  
+- Notebooks → local uniquement  
+- Secrets → jamais envoyés  
+- Cache/logs → ignorés  
+- Code source → GitHub  
+- Fichiers essentiels → GitHub  
+
+### Cycle Git standard :
+```
+git pull
+git status
+git add .
+git commit -m "update"
+git push origin main
+```
+
+### Sécurité :
+- `.env` et `secrets.toml` → toujours ignorés  
+- Ne jamais publier un token  
+- Vérifier GitHub après chaque push  
+
+---
+
+## 13. Conclusion
 
 Ce README contient **100% des commandes**, scripts, configurations, solutions et procédures pour exécuter le dashboard de manière **infaillible, stable et durable**.
-
-
 
 ## 🔗 Accès au Dashboard Déployé
 
 👉 **Lien Streamlit :** https://dashboardenqueteactuarielleautoci-j82qjrkwcnptsrrupmtzxg.streamlit.app/
+
+---
+
+README complet
