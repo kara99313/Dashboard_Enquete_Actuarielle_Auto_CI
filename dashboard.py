@@ -38,9 +38,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# 🔁 Auto-refresh désactivé pour le déploiement Streamlit Cloud
-# (si on veut le remettre plus tard, on réintroduira streamlit_extras.st_autorefresh)
-
 # ====== Style global (HTML/CSS léger) ======
 st.markdown(
     """
@@ -91,7 +88,7 @@ TARGET_VARS = {
 
 # Mapping souple : noms Kobo potentiels → noms cibles
 RENAME_SOFT = {
-    # "zone_geographique": "zone",  # supprimé : cette variable n'existe pas dans le questionnaire
+    # "zone_geographique": "zone",  # supprimé : pas dans le questionnaire
     "age_vehicule": "agevehicule",
     "age_conducteur": "ageconducteur",
     "puissance_cv": "puissance",
@@ -125,7 +122,7 @@ TARGET_COL = "prime_pure"
 # FONCTIONS UTILITAIRES
 # ==========================================================
 
-@st.cache_data(ttl=300)  # 300s = 5 min (cohérent avec un éventuel auto-refresh)
+@st.cache_data(ttl=300)
 def fetch_kobo_json() -> pd.DataFrame:
     """Récupère les données Kobo brutes (JSON v2)."""
     r = requests.get(API_DATA_URL, headers=HEADERS, timeout=60)
@@ -543,10 +540,9 @@ with st.sidebar.expander("🔎 Schéma & Qualité des variables"):
     st.write("**Types de données (échantillon)**")
     st.write(df.dtypes.astype(str))
 
-# 🔘 Bouton manuel de rechargement Kobo (vide le cache + rerun)
 if st.sidebar.button("🔄 Recharger les données Kobo"):
     fetch_kobo_json.clear()
-    st.experimental_rerun()  # st.rerun() si tu es en version récente
+    st.rerun()  # ⚠️ ICI : on utilise st.rerun() (plus experimental_rerun)
 
 # ==========================================================
 # TABS PRINCIPAUX
