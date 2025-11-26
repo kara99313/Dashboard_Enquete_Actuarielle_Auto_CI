@@ -1,4 +1,4 @@
-# ==========================================================
+# ========================================================== 
 # AfriAI Solutions – Projet d’évaluation Python
 # Requirements pour Python 3.12+ / 3.13 (validés VS Code & Streamlit Cloud)
 # ----------------------------------------------------------
@@ -14,6 +14,7 @@
 python-dotenv==1.0.1
 setuptools==80.9.0
 wheel==0.45.1
+httpx==0.27.2            # ← pin important pour compatibilité Groq (évite l’erreur proxies)
 
 
 # -------------------------------
@@ -77,13 +78,10 @@ nbformat==5.10.4
 
 
 # -------------------------------
-# IA & RAG (OPTIONNEL – pour extensions futures)
+# IA & RAG
 # -------------------------------
-# langchain==0.3.5
-# langchain-community==0.3.5
-# openai==1.51.0
-# tiktoken==0.8.0
-# faiss-cpu==1.8.0
+groq==0.11.0               # *** Client officiel Groq pour l’agent IA
+tavily-python==0.5.0       # *** Moteur de recherche web temps réel
 
 
 # -------------------------------
