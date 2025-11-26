@@ -18,7 +18,8 @@ Dashboard connecté à *KoboToolbox* permettant :
   - Histogrammes, Boxplots  
   - Série temporelle  
   - Cartographie GPS  
-- Contrôle de la qualité des données
+- Contrôle de la qualité des données  
+- Analyse IA (Groq) + Recherche web (Tavily)
 
 ---
 
@@ -84,11 +85,58 @@ gatherUsageStats = false
 
 ### 4.2 — `.streamlit/secrets.toml`
 
+### 🔐 Secrets (Streamlit Cloud uniquement)
+
+Les secrets doivent être définis via :
+
+➡️ **Streamlit Cloud → Settings → Secrets**
+
 ```toml
 KOBO_BASE = "https://kf.kobotoolbox.org"
-KOBO_TOKEN = "TON_TOKEN_ICI"
-ASSET_UID = "TON_ASSET_UID"
+KOBO_TOKEN = "VOTRE_TOKEN"
+ASSET_UID = "VOTRE_ASSET_UID"
+
+GROQ_API_KEY = "gsk_xxx"
+TAVILY_API_KEY = "tvly_xxx"
 ```
+
+⚠️ Ne jamais stocker un secret dans GitHub.  
+⚠️ Le fichier `secrets.toml` local n'est plus utilisé.
+
+---
+
+## 🛡️ Gestion robuste des secrets dans le code
+
+Le fichier `dashboard.py` utilise désormais :
+
+```python
+def get_secret(key: str, default=None):
+    try:
+        return st.secrets[key]
+    except KeyError:
+        return default
+```
+
+---
+
+## 🤖 Agent IA intégré (Groq + Tavily)
+
+- Analyse assistée par LLM Groq  
+- Recherche web en temps réel via Tavily  
+- Génération de résumés et d’explications  
+- Sous-onglets : *Mode d'emploi* & *Conversation IA*  
+- Nettoyage de l'historique
+
+---
+
+## 🧭 Structure du dashboard
+
+- **Vue globale** : KPIs / Résumé / Tendances  
+- **Analyse actuarielle** : exposition, fréquence, sévérité, prime pure, graphiques  
+- **Résumé exécutif automatique** (IA)  
+- **Agent IA**  
+- **Gestion du thème (clair/sombre)**  
+
 
 ---
 
