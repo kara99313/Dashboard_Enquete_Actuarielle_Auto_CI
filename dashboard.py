@@ -25,21 +25,29 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # ==========================================================
-# CONFIG GÉNÉRALE
+# CONFIG GÉNÉRALE — Gestion robuste des secrets
 # ==========================================================
+def get_secret(key: str, default=None):
+    try:
+        return st.secrets[key]
+    except KeyError:
+        return default
 
-KOBO_BASE = st.secrets.get("KOBO_BASE", "https://kf.kobotoolbox.org")
-KOBO_TOKEN = st.secrets["KOBO_TOKEN"]
-ASSET_UID = st.secrets["ASSET_UID"]
+KOBO_BASE = get_secret("KOBO_BASE", "https://kf.kobotoolbox.org")
+KOBO_TOKEN = get_secret("KOBO_TOKEN")
+ASSET_UID = get_secret("ASSET_UID")
 
-GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", None)
-TAVILY_API_KEY = st.secrets.get("TAVILY_API_KEY", None)
+GROQ_API_KEY = get_secret("GROQ_API_KEY")
+TAVILY_API_KEY = get_secret("TAVILY_API_KEY")
 
 API_DATA_URL = f"{KOBO_BASE}/api/v2/assets/{ASSET_UID}/data/?format=json&group_sep=/"
 HEADERS = {"Authorization": f"Token {KOBO_TOKEN}"}
 
+# ==========================================================
+# CONFIG UI
+# ==========================================================
 st.set_page_config(
-    page_title="Dashboard Actuariel Auto — Côte d’Ivoire",
+    page_title="Dashboard Actuariel Auto – Côte d’Ivoire",
     layout="wide",
     initial_sidebar_state="expanded",
 )
